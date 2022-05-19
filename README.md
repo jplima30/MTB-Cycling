@@ -1,2 +1,3 @@
 # MTB-Cycling
-Swift_Project
+Timer para cálculo de atividades baseado na
+escolha da categoria de ciclismo

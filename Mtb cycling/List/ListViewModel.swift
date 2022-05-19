@@ -8,5 +8,3 @@ class ListViewModel {
         return UserDefaults.standard.object(forKey: key) as? String ?? "0"
     }
 }
-
-

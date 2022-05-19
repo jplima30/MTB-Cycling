@@ -1,8 +1,7 @@
-
 import UIKit
 
 class ListViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     let viewModel = ListViewModel()
     var exercices: [Model] = Model.getExercises()
@@ -12,7 +11,7 @@ class ListViewController: UIViewController {
         tableView.dataSource = self
         viewModel.viewController = self
     }
-
+    
 }
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate {

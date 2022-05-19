@@ -1,8 +1,7 @@
-
 import Foundation
 
 class TimerViewModel {
-   weak var timerViewController: TimerViewController?
+    weak var timerViewController: TimerViewController?
     
     var timer: Timer?
     var isRunning: Bool = false
@@ -26,13 +25,13 @@ class TimerViewModel {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
     
-   private func stopTimer() {
+    private func stopTimer() {
         timer?.invalidate()
     }
     
-   @objc func fireTimer() {
+    @objc func fireTimer() {
         runCount += 1
-       timerViewController?.setSecondsLabel(text: "\(runCount)")
+        timerViewController?.setSecondsLabel(text: "\(runCount)")
     }
     
     func saveRecords(record: String, key: String) {

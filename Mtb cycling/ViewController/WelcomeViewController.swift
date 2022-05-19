@@ -1,4 +1,3 @@
-
 import UIKit
 
 class WelcomeViewController: UIViewController {
@@ -7,7 +6,6 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    
     
     @IBAction func irParaLista(_ sender: Any) {
         
